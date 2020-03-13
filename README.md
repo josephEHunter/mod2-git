@@ -44,4 +44,6 @@ to install all the dependencies locally to your desktop
 
 https://mod2-firebase-55236.firebaseapp.com/
 
-tried my best in less then 24 hours I'm growing in this just didn't have enough time 
+I'm not great at styling i left some things open for future updates.
+
+thank you for visiting.

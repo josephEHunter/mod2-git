@@ -12,7 +12,7 @@ class Fetch1 extends React.Component{
     this.state={
       fetching: false,
       fetched: false,
-      user: " ",
+      data: " ",
       error:null
     }
   }
@@ -43,12 +43,24 @@ const store = createStore(reducer, middleware)
 
 store.dispatch({
   type: "FETCH_USERS",
-  payload:axios.get("http://rest.learncode.acadamy/api/wstern/users")
+  payload:fetch('https://data.cityofnewyork.us/resource/ud4g-9x9z.json?borough=Bronx&$limit=10')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {data.map(data => {
+
+      this.setState({
+        isloaded: true,
+        data: data
+      })
 
 })
-
+render(){
 return(
-<Render1 user={this.state.user} />
+  <Fetch1 >
+<Render1 passedData={this.state}/>
+  </Fetch1 >
 )
+}
 }
 export default Fetch1

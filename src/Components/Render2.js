@@ -7,7 +7,7 @@ class Render2 extends React.Component{
 
   consoleTest2 = () => {
   console.log("this is from render2")
-  console.log(this.props.region)
+  console.log(this.props.lat)
 }
   render(){
 
@@ -17,8 +17,8 @@ class Render2 extends React.Component{
     <h3>Country:{this.props.country}</h3>
     <h3>State:{this.props.region}</h3>
 
+    <Fetch3 lat={this.props.lat} lon={this.props.lon} city={this.props.city} zip={this.props.zip}/>
 
-    <Fetch3 lat={this.props.lat} lon={this.props.lon}/>
 
     </div>
   )

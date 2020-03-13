@@ -1,7 +1,8 @@
 import React from 'react'
 import About from "./Components/About"
-import Store from "./Components/Store"
+import Info from "./Components/Info"
 import Home from "./Components/Home"
+import {render} from "react-dom"
 import {BrowserRouter as Router,
         Switch,
         Route,
@@ -59,7 +60,7 @@ class App extends React.Component {
 
 
         <li>
-        <Link to ="/Store"> Store </Link>
+        <Link to ="/Info"> Info </Link>
         </li>
 
 
@@ -77,7 +78,7 @@ class App extends React.Component {
 
   <Route path="/About" component={About}/>
 
-  <Route path="/Store" component={Store}/>
+  <Route path="/Info" component={Info}/>
 
   </Switch>
 

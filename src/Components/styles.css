@@ -1,0 +1,28 @@
+body{
+    background-color: blanchedalmond;
+}
+
+img {
+    border: 3px solid rgb(32, 46, 5);
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 15px;
+}
+
+button{
+  font-size: 15px;
+  background-color: blanchedalmond;
+  border: 3px solid rgb(32, 46, 5);
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 15px;
+}
+
+.storeName{
+  text-decoration: underline;
+  color: green;
+}

@@ -1,5 +1,4 @@
 import React from "react"
-import Fetch3 from "./Fetch3"
 
 
 
